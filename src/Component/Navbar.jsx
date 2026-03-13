@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const logo = '/Images/dream-logo-ok.png';
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+const logo = `${PUBLIC_URL}/Images/dream-logo-ok.png`;
 const Navbar = ({ onEnquiryClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openCourses, setOpenCourses] = useState(false);

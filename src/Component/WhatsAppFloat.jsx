@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-const whatsappImg = '/Assets/whatsapp.png';
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+const whatsappImg = `${PUBLIC_URL}/Assets/whatsapp.png`;
 const WhatsAppFloat = () => {
   const location = useLocation();
   if (location.pathname.startsWith('/admin') || location.pathname === '/login') {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const logo1 = '/Images/dream-logo-ok.png';
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+const logo1 = `${PUBLIC_URL}/Images/dream-logo-ok.png`;
 
 const Footer = () => {
   return (

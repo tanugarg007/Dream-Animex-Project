@@ -5,11 +5,12 @@ import FAQ from '../Component/FAQ';
 import Footer from '../Component/Footer';
 import Navbar from '../Component/Navbar';
 
-const logo14 = "/Images/aboutus.png";
-const logo9 = "/Assets/page-background.JPG";
-const logo11 = "/Images/aboutbackground.png";
-const logo16 = "/Images/imagestexture.jpg";
-const logo = "/Images/dream-anim-logo.png";
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+const logo14 = `${PUBLIC_URL}/Images/aboutus.png`;
+const logo9 = `${PUBLIC_URL}/Assets/page-background.JPG`;
+const logo11 = `${PUBLIC_URL}/Images/aboutbackground.png`;
+const logo16 = `${PUBLIC_URL}/Images/imagestexture.jpg`;
+const logo = `${PUBLIC_URL}/Images/dream-anim-logo.png`;
 
 const About = () => {
   const [openIndex, setOpenIndex] = useState(null);

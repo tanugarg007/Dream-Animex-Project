@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Environment variables
+
+This app supports Create React App env vars.
+
+- Copy `env.example` to `.env.local` (create it in the project root) and set:
+  - `REACT_APP_API_BASE_URL` (your backend base URL)
+  - `PUBLIC_URL` (only if deploying under a subfolder, e.g. `/dream`)
+
 ### `npm start`
 
 Runs the app in the development mode.\

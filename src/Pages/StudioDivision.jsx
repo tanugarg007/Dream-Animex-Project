@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Footer from '../Component/Footer';
-const logo9 = 'Images/page-background.JPG';
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+const logo9 = `${PUBLIC_URL}/Images/page-background.JPG`;
 
 const StudioDivision = () => {
   const [showPopup, setShowPopup] = useState(false);

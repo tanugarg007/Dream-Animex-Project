@@ -3,8 +3,9 @@ import Footer from "../Component/Footer";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { serverUrl } from "../url/url";
-const logo9 = 'Images/page-background.JPG';
-const contactBg = 'Images/contact-bg.JPG.jpeg';
+const PUBLIC_URL = process.env.PUBLIC_URL || '';
+const logo9 = `${PUBLIC_URL}/Images/page-background.JPG`;
+const contactBg = `${PUBLIC_URL}/Images/contact-bg.JPG.jpeg`;
 const ContactUs = () => {
   const NAME_REGEX = /^[A-Za-z ]+$/;
   const [formData, setFormData] = useState({
